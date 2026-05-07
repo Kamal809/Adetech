@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adekam Tech Portfolio</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f5f7fb;
+    color:#333;
+    line-height:1.6;
+}
+
+/* HEADER */
+header{
+    background:#0f172a;
+    color:#fff;
+    padding:18px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+header h1{
+    font-size:28px;
+    font-weight:700;
+}
+
+nav a{
+    color:#fff;
+    text-decoration:none;
+    margin-left:20px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+/* HERO */
+.hero{
+    min-height:90vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:60px 8%;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+.hero-text{
+    flex:1;
+    animation:fadeIn 1s ease;
+}
+
+.hero-text h2{
+    font-size:50px;
+    margin-bottom:15px;
+    color:#0f172a;
+}
+
+.hero-text span{
+    color:#38bdf8;
+}
+
+.hero-text p{
+    margin-bottom:25px;
+    max-width:550px;
+}
+
+.hero-btn{
+    display:inline-block;
+    padding:14px 28px;
+    background:#38bdf8;
+    color:#fff;
+    text-decoration:none;
+    border-radius:8px;
+    transition:0.3s;
+}
+
+.hero-btn:hover{
+    background:#0284c7;
+    transform:translateY(-3px);
+}
+
+.hero img{
+    width:420px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+    animation:float 3s ease-in-out infinite;
+}
+
+/* ABOUT */
+.about{
+    padding:80px 8%;
+    background:#fff;
+    text-align:center;
+}
+
+.about h3{
+    font-size:36px;
+    margin-bottom:20px;
+    color:#0f172a;
+}
+
+.about p{
+    max-width:800px;
+    margin:auto;
+    color:#555;
+}
+
+/* TESTIMONIALS */
+.testimonials{
+    padding:80px 8%;
+    text-align:center;
+}
+
+.testimonials h3{
+    font-size:36px;
+    margin-bottom:40px;
+    color:#0f172a;
+}
+
+.testimonial-container{
+    display:flex;
+    gap:25px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.testimonial{
+    background:#fff;
+    padding:25px;
+    border-radius:15px;
+    max-width:350px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.testimonial:hover{
+    transform:translateY(-8px);
+}
+
+.testimonial p{
+    margin-bottom:15px;
+    color:#555;
+}
+
+/* CTA */
+.cta{
+    background:#0f172a;
+    color:#fff;
+    text-align:center;
+    padding:80px 8%;
+}
+
+.cta h3{
+    font-size:40px;
+    margin-bottom:15px;
+}
+
+.cta p{
+    margin-bottom:25px;
+}
+
+.cta a{
+    display:inline-block;
+    padding:14px 28px;
+    background:#38bdf8;
+    color:#fff;
+    text-decoration:none;
+    border-radius:8px;
+    transition:0.3s;
+}
+
+.cta a:hover{
+    background:#0284c7;
+    transform:scale(1.05);
+}
+
+/* FOOTER */
+footer{
+    background:#020617;
+    color:#fff;
+    text-align:center;
+    padding:20px;
+}
+
+/* ANIMATIONS */
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@keyframes float{
+    0%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-10px);
+    }
+    100%{
+        transform:translateY(0);
+    }
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+
+    header{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .hero{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .hero-text h2{
+        font-size:38px;
+    }
+
+    .hero img{
+        width:100%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <h1>Adekam Tech</h1>
+
+    <nav>
+        <a href="client.html">Home</a>
+        <a href="clientproject.html">About</a>
+        <a href="clientcontact.html">Contact</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+
+    <div class="hero-text">
+        <h2>Creative Digital Solutions by <span>Adekam Tech</span></h2>
+
+        <p>
+            Adekam Tech delivers modern web experiences with creativity,
+            professionalism, and years of experience in frontend development,
+            responsive design, and digital branding.
+        </p>
+
+        <a href="#" class="hero-btn">Explore Portfolio</a>
+    </div>
+
+    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop" alt="Tech Workspace">
+
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+
+    <h3>About Adekam Tech</h3>
+
+    <p>
+        Adekam Tech is a creative technology brand focused on building clean,
+        responsive, and professional digital experiences. With strong experience
+        in web development and UI/UX design, we help businesses and individuals
+        establish a strong online presence through modern and visually engaging websites.
+    </p>
+
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials" id="testimonials">
+
+    <h3>What Clients Say</h3>
+
+    <div class="testimonial-container">
+
+        <div class="testimonial">
+            <p>
+                "Adekam Tech transformed our online presence with a beautiful and responsive website. Very professional work!"
+            </p>
+
+            <strong>- Ibrahim Yusuf</strong>
+        </div>
+
+        <div class="testimonial">
+            <p>
+                "The design quality and attention to detail were amazing. Highly recommended for modern web projects."
+            </p>
+
+            <strong>- Aisha Bello</strong>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CTA -->
+<section class="cta" id="contact">
+
+    <h3>Let’s Build Something Amazing</h3>
+
+    <p>
+        Ready to create a modern website for your brand or business?
+    </p>
+
+    <a href="https://wa.me/2349031558287" target="_blank">
+        Contact Adekam Tech
+    </a>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Adekam Tech. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
